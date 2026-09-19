@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <ul>
+      <% if (events.length > 0) { %>
+        <% events.forEach(event => { %>
+          <li><%= event.title %></li>
+        <% }); %>
+      <% }; %>
+      <% else { %>
+        <h1><%= title %></h1>
+      <% }; %>
+    </ul>
+  </body>x
+</html>
