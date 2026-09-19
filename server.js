@@ -30,8 +30,13 @@ app.get("/events", (request, response) => {
   response.render("events", { title: "My Events", events });
 });
 
+
 app.get("/", (req, res) => {
   res.sendFile(join(import.meta.dirname, "public", "index.html"));
+});
+
+app.get("/about", (req, res) => {
+  res.render("about", { title: "About" });
 });
 
 app.get("/projects", (req, res) => {
